@@ -1,16 +1,16 @@
 //exercise 1
-function logFunction(num){
-  for(let i=0;i<101;i++){
+function logFunction(num1,num2){
+  for(let i = 1;i < 100;i++){
 
-    if(i%3==0&&i%5==0){
+    if(i % num1== 0 && i % num2 == 0){
      console.log("Jackpot!");
    }
-   else if(i%3==0){
+   else if(i%num1==0){
      console.log("This is divisible    by 3");
    }
-   else if(i%5==0){
+   else if(i % num2 == 0){
      console.log("This is divisibleby 5");
    }
   }
 }
-logFunction()
+logFunction(5,8);

@@ -1,4 +1,5 @@
-const buttonClick=document.getElementById('click')
+const buttonClick=document.createElement('button')
+document.body.appendChild('buttonClick');
 const image=document.createElement('img')
 const url1='https://pixy.org/src/20/thumbs350/201310.jpg'
 const url2='https://img.xcitefun.net/users/2014/07/360840,xcitefun-jiuzhaigou-national-park-1.jpeg'

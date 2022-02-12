@@ -17,10 +17,11 @@ document.body.appendChild(image)
 function fetchData(){
   fetch('https://reqres.in/api/users').then(res=>res.json())
   .then(res=>{
-    for(let i=0;i<3;i++){
-     console.log( res.data[i].first_name);
-    }
-  })
+   const result= res.data.map(d=>
+    d.first_name
+    ).slice(0,3)
+   console.log(result);
+    })
 }
 fetchData()
 
